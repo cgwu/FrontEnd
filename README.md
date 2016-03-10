@@ -1,4 +1,4 @@
-Bower, Grunt, RequireJS
+Bower, Grunt, RequireJS, Backbone
 
 Grunt
 http://gruntjs.com/
