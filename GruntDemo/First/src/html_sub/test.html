@@ -7,12 +7,16 @@
 <body>
     <h1 id="msg"></h1>
 <!--    <script data-main="/src/js/app" src="/src/js/lib/require.min.js"></script>-->
-    <script src="/src/js/lib/require.min.js"></script>
+    <script src="../js/lib/require.min.js"></script>
     <script>
         require(["../js/app.js"], function(app){
-            require(['jquery',"underscore"],function($, _){
+            require(['jquery',"underscore",'app/2','app/1'],function($, _, app2, app1){
                 alert($("#msg").html());
                 _.each([1, 2, 3], alert);
+                f_second();
+                app1();
+                console.log('what is app2:');
+                console.log(app2);      //undefined
             }); 
         });
     </script>

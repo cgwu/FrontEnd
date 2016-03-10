@@ -38,7 +38,8 @@ requirejs.config({
 //    waitSeconds: 10 
 // });
 
-requirejs(['calculator/square', 'calculator/divide', 'jquery'], function(sq,d,$){
+require(['calculator/square', 'calculator/divide', 'jquery', 'domReady!'], function(sq,d,$,domReady){
+//    alert('domReady!');
     console.log(d(9,4));
     console.log(sq(9));
     $("#msg").html("HELLO from jquery!");

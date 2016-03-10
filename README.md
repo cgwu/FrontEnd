@@ -1,4 +1,4 @@
-Bower, Grunt, RequireJS, Backbone
+Bower, Grunt, RequireJS, Backbone, Knockout.js
 
 Grunt
 http://gruntjs.com/
@@ -16,4 +16,13 @@ npm init
 npm install -S grunt
 根据package.json恢复依赖模块:
 npm install 
+
+Brackets/keymap.json自定义修改：
+{
+    "documentation": "https://github.com/adobe/brackets/wiki/User-Key-Bindings",
+    "overrides": {
+        "Ctrl-Shift-D":  "edit.duplicate",
+        "Ctrl-D":        "edit.deletelines"
+    }
+}
 
